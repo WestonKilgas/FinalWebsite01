@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 .claude/skills/ui-ux-pro-max/scripts/search.py \"dog cafe cozy warm playful storybook arthurian camelot claymorphism\" --design-system -p \"Chateau Barkalot\" -f markdown)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"dog cafe cozy warm playful storybook arthurian camelot claymorphism\" --design-system -p \"Chateau Barkalot\" -f markdown)",
+      "Bash(where py *)",
+      "Bash(py --version)",
+      "Bash(py .claude/skills/ui-ux-pro-max/scripts/search.py \"dog cafe cozy warm playful storybook arthurian camelot claymorphism\" --design-system -p \"Chateau Barkalot\" -f markdown)",
+      "Skill(nano-banana-2)",
+      "Bash(where infsh *)",
+      "Bash(npx infsh *)"
+    ]
+  }
+}

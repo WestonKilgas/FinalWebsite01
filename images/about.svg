@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Friendly golden retriever barista in a green tabard standing behind a warm wood-and-stone café counter with pewter tankards and fresh pastries">
+  <defs>
+    <filter id="grain-about">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="blur-bg-about"><feGaussianBlur stdDeviation="1.0"/></filter>
+    <radialGradient id="windowAbout" cx="50%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#FFF8E0" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#F5EDD8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#EDE0C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="counterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8965A"/>
+      <stop offset="100%" stop-color="#7B4A1E"/>
+    </linearGradient>
+    <radialGradient id="goldenDog" cx="38%" cy="22%" r="65%">
+      <stop offset="0%" stop-color="#F5C97A"/>
+      <stop offset="55%" stop-color="#D4883A"/>
+      <stop offset="100%" stop-color="#8B4A10"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background stone wall -->
+  <rect width="800" height="600" fill="#C9B99A" filter="url(#blur-bg-about)"/>
+  <g fill="none" stroke="#B0A080" stroke-width="1" opacity="0.5" filter="url(#blur-bg-about)">
+    <rect x="0" y="0" width="100" height="70"/><rect x="100" y="0" width="120" height="70"/>
+    <rect x="220" y="0" width="100" height="70"/><rect x="320" y="0" width="130" height="70"/>
+    <rect x="450" y="0" width="110" height="70"/><rect x="560" y="0" width="120" height="70"/>
+    <rect x="680" y="0" width="120" height="70"/>
+    <rect x="50" y="70" width="120" height="70"/><rect x="170" y="70" width="100" height="70"/>
+    <rect x="270" y="70" width="130" height="70"/><rect x="400" y="70" width="110" height="70"/>
+    <rect x="510" y="70" width="120" height="70"/><rect x="630" y="70" width="170" height="70"/>
+  </g>
+
+  <!-- Arched window background -->
+  <g filter="url(#blur-bg-about)">
+    <path d="M300,0 L300,240 Q300,320 400,320 Q500,320 500,240 L500,0 Z" fill="#87CEEB" opacity="0.65"/>
+    <path d="M300,0 L300,240 Q300,320 400,320 Q500,320 500,240 L500,0 Z" fill="url(#windowAbout)"/>
+    <path d="M300,0 L300,240 Q300,320 400,320 Q500,320 500,240 L500,0 Z" fill="none" stroke="#8B7355" stroke-width="10"/>
+    <line x1="400" y1="0" x2="400" y2="320" stroke="#8B7355" stroke-width="5"/>
+    <line x1="300" y1="160" x2="500" y2="160" stroke="#8B7355" stroke-width="5"/>
+  </g>
+
+  <!-- Counter / bar -->
+  <rect x="0" y="400" width="800" height="200" fill="url(#counterGrad)"/>
+  <!-- Counter front -->
+  <rect x="0" y="390" width="800" height="30" rx="6" fill="#A0682E"/>
+  <!-- Counter edge highlight -->
+  <rect x="0" y="390" width="800" height="6" rx="3" fill="#D4A060" opacity="0.6"/>
+  <!-- Stone face below counter -->
+  <g fill="none" stroke="#6B4820" stroke-width="1" opacity="0.4">
+    <rect x="0" y="430" width="100" height="60"/><rect x="100" y="430" width="120" height="60"/>
+    <rect x="220" y="430" width="100" height="60"/><rect x="320" y="430" width="140" height="60"/>
+    <rect x="460" y="430" width="110" height="60"/><rect x="570" y="430" width="130" height="60"/>
+    <rect x="700" y="430" width="100" height="60"/>
+  </g>
+
+  <!-- Overhead tankard rack -->
+  <rect x="100" y="60" width="600" height="10" rx="5" fill="#7B4A1E"/>
+  <!-- Hanging tankards -->
+  <g>
+    <line x1="160" y1="70" x2="160" y2="110" stroke="#9BA8A0" stroke-width="2"/>
+    <rect x="148" y="110" width="24" height="34" rx="3" fill="#9BA8A0"/>
+    <path d="M172,118 Q182,124 182,136 Q182,148 172,148" fill="none" stroke="#9BA8A0" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="160" cy="108" rx="14" ry="5" fill="#C8D0C8"/>
+
+    <line x1="250" y1="70" x2="250" y2="100" stroke="#9BA8A0" stroke-width="2"/>
+    <rect x="238" y="100" width="24" height="34" rx="3" fill="#8A9590"/>
+    <path d="M262,108 Q272,114 272,126 Q272,138 262,138" fill="none" stroke="#8A9590" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="250" cy="98" rx="14" ry="5" fill="#B8C0B8"/>
+
+    <line x1="550" y1="70" x2="550" y2="108" stroke="#9BA8A0" stroke-width="2"/>
+    <rect x="538" y="108" width="24" height="34" rx="3" fill="#9BA8A0"/>
+    <path d="M562,116 Q572,122 572,134 Q572,146 562,146" fill="none" stroke="#9BA8A0" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="550" cy="106" rx="14" ry="5" fill="#C8D0C8"/>
+
+    <line x1="640" y1="70" x2="640" y2="98" stroke="#9BA8A0" stroke-width="2"/>
+    <rect x="628" y="98" width="24" height="30" rx="3" fill="#8A9590"/>
+    <path d="M652,105 Q661,110 661,120 Q661,130 652,130" fill="none" stroke="#8A9590" stroke-width="3.5" stroke-linecap="round"/>
+    <ellipse cx="640" cy="96" rx="13" ry="4" fill="#B8C0B8"/>
+  </g>
+
+  <!-- Pastry board on counter -->
+  <g transform="translate(560,330)">
+    <!-- Wooden board -->
+    <rect x="0" y="0" width="200" height="70" rx="8" fill="#A0682E"/>
+    <rect x="0" y="0" width="200" height="70" rx="8" fill="none" stroke="#7B4A1E" stroke-width="2"/>
+    <!-- Croissant -->
+    <path d="M20,50 Q30,25 50,30 Q60,35 55,50 Q45,55 35,52 Q22,56 20,50 Z" fill="#D4A060"/>
+    <path d="M22,48 Q32,26 48,30" fill="none" stroke="#B07830" stroke-width="2" stroke-linecap="round"/>
+    <!-- Muffin -->
+    <g transform="translate(70,10)">
+      <rect x="10" y="28" width="40" height="28" rx="4" fill="#C84B31" opacity="0.9"/>
+      <path d="M5,30 Q30,10 55,30 Z" fill="#D97706"/>
+      <circle cx="18" cy="20" r="6" fill="#D97706"/>
+      <circle cx="30" cy="14" r="7" fill="#D97706"/>
+      <circle cx="42" cy="20" r="6" fill="#D97706"/>
+    </g>
+    <!-- Scone -->
+    <g transform="translate(140,15)">
+      <ellipse cx="25" cy="30" rx="28" ry="20" fill="#E8C090"/>
+      <ellipse cx="25" cy="30" rx="28" ry="20" fill="none" stroke="#C09060" stroke-width="2"/>
+      <ellipse cx="23" cy="28" rx="18" ry="12" fill="#F0D0A0" opacity="0.5"/>
+    </g>
+    <!-- Honey drizzle -->
+    <path d="M100,5 Q105,15 98,25 Q103,20 108,28" stroke="#D97706" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Coffee cup on counter -->
+  <g transform="translate(130,340)">
+    <rect x="0" y="0" width="50" height="55" rx="6" fill="#FDF6E8"/>
+    <rect x="0" y="0" width="50" height="55" rx="6" fill="none" stroke="#C0A060" stroke-width="2"/>
+    <path d="M50,15 Q65,22 65,35 Q65,48 50,48" fill="none" stroke="#E8D0A0" stroke-width="5" stroke-linecap="round"/>
+    <!-- Coffee inside -->
+    <ellipse cx="25" cy="8" rx="20" ry="7" fill="#6B4226"/>
+    <!-- Latte art heart -->
+    <path d="M16,6 Q20,2 25,6 Q30,2 34,6 Q34,10 25,16 Q16,10 16,6 Z" fill="#D4883A" opacity="0.8"/>
+    <!-- Steam -->
+    <path d="M15,0 Q18,-8 14,-16" stroke="#E8DCC8" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M25,0 Q28,-10 24,-18" stroke="#E8DCC8" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M35,0 Q38,-8 34,-16" stroke="#E8DCC8" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <!-- Saucer -->
+    <ellipse cx="25" cy="55" rx="32" ry="8" fill="#E8D0A0"/>
+  </g>
+
+  <!-- Golden Retriever Barista (MAIN CHARACTER) -->
+  <g class="breathe" transform="translate(270,180)" filter="url(#grain-about)">
+    <!-- Fur layers — back -->
+    <ellipse cx="130" cy="300" rx="90" ry="160" fill="#C07830" opacity="0.6"/>
+    <!-- Apron / green tabard -->
+    <path d="M60,200 Q130,170 200,200 L210,360 Q130,390 50,360 Z" fill="#166534"/>
+    <path d="M80,200 Q130,185 180,200 L185,240 Q130,255 75,240 Z" fill="#1A7A3C"/>
+    <!-- Body -->
+    <ellipse cx="130" cy="290" rx="80" ry="140" fill="url(#goldenDog)"/>
+    <!-- Arms/paws on counter -->
+    <ellipse cx="60" cy="395" rx="30" ry="18" fill="#D4883A"/>
+    <ellipse cx="200" cy="395" rx="30" ry="18" fill="#D4883A"/>
+    <!-- Head -->
+    <circle cx="130" cy="130" r="90" fill="url(#goldenDog)"/>
+    <!-- Snout -->
+    <ellipse cx="130" cy="158" rx="45" ry="32" fill="#E8AA60"/>
+    <ellipse cx="130" cy="148" rx="20" ry="13" fill="#2C1810"/>
+    <!-- Eyes — big expressive Pixar eyes -->
+    <circle cx="96" cy="110" r="18" fill="#2C1810"/>
+    <circle cx="164" cy="110" r="18" fill="#2C1810"/>
+    <circle cx="90" cy="105" r="7" fill="white"/>
+    <circle cx="158" cy="105" r="7" fill="white"/>
+    <circle cx="88" cy="103" r="3" fill="white" opacity="0.6"/>
+    <circle cx="156" cy="103" r="3" fill="white" opacity="0.6"/>
+    <!-- Eyebrows (friendly raised) -->
+    <path d="M80,90 Q96,82 112,90" fill="none" stroke="#8B5A20" stroke-width="4" stroke-linecap="round"/>
+    <path d="M148,90 Q164,82 180,90" fill="none" stroke="#8B5A20" stroke-width="4" stroke-linecap="round"/>
+    <!-- Smile -->
+    <path d="M102,168 Q130,188 158,168" fill="none" stroke="#2C1810" stroke-width="4" stroke-linecap="round"/>
+    <!-- Tongue -->
+    <path d="M114,178 Q130,195 146,178" fill="#E8607A"/>
+    <!-- Ear left -->
+    <path d="M48,80 Q20,50 30,10 Q60,45 80,85 Z" fill="#C07830"/>
+    <!-- Ear right -->
+    <path d="M212,80 Q240,50 230,10 Q200,45 180,85 Z" fill="#C07830"/>
+    <!-- Fluffy chest -->
+    <ellipse cx="130" cy="220" rx="55" ry="30" fill="#F0C870" opacity="0.5"/>
+    <!-- Tiny chef hat (optional fun detail) -->
+    <rect x="110" y="28" width="40" height="28" rx="4" fill="white"/>
+    <rect x="100" y="52" width="60" height="10" rx="3" fill="white"/>
+    <ellipse cx="130" cy="52" rx="30" ry="8" fill="white"/>
+  </g>
+
+  <!-- Warm ambient overlay -->
+  <rect width="800" height="600" fill="#D97706" opacity="0.05"/>
+  <radialGradient id="vig-about" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#2C1810" stop-opacity="0.25"/>
+  </radialGradient>
+  <rect width="800" height="600" fill="url(#vig-about)"/>
+</svg>

@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="A cartoon dog in a knight's tabard receiving a pastry from a café guest's hand, warm bokeh café background with stone walls and tapestries">
+  <defs>
+    <filter id="grain-gallery">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/>
+    </filter>
+    <filter id="bokeh-bg">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="soft-glow-g">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <radialGradient id="bgGallery" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#E8C890"/>
+      <stop offset="60%" stop-color="#C09050"/>
+      <stop offset="100%" stop-color="#7B4A18"/>
+    </radialGradient>
+    <radialGradient id="knightDogCoat" cx="38%" cy="22%" r="65%">
+      <stop offset="0%" stop-color="#F0C870"/>
+      <stop offset="55%" stop-color="#C88030"/>
+      <stop offset="100%" stop-color="#7B4A08"/>
+    </radialGradient>
+    <radialGradient id="pastryGrad" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#F8E0A0"/>
+      <stop offset="60%" stop-color="#D4A860"/>
+      <stop offset="100%" stop-color="#A07830"/>
+    </radialGradient>
+    <radialGradient id="glowCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF4D6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Bokeh background (heavily blurred for shallow DoF effect) -->
+  <rect width="800" height="800" fill="url(#bgGallery)" filter="url(#bokeh-bg)"/>
+
+  <!-- Stone wall background (blurred) -->
+  <g filter="url(#bokeh-bg)" opacity="0.7">
+    <g fill="none" stroke="#A08060" stroke-width="2" opacity="0.4">
+      <rect x="0" y="0" width="110" height="75"/><rect x="110" y="0" width="130" height="75"/>
+      <rect x="240" y="0" width="110" height="75"/><rect x="350" y="0" width="130" height="75"/>
+      <rect x="480" y="0" width="120" height="75"/><rect x="600" y="0" width="110" height="75"/>
+      <rect x="710" y="0" width="90" height="75"/>
+      <rect x="55" y="75" width="130" height="75"/><rect x="185" y="75" width="110" height="75"/>
+      <rect x="295" y="75" width="130" height="75"/><rect x="425" y="75" width="120" height="75"/>
+      <rect x="545" y="75" width="110" height="75"/><rect x="655" y="75" width="145" height="75"/>
+    </g>
+  </g>
+
+  <!-- Tapestry (blurred background) -->
+  <g filter="url(#bokeh-bg)">
+    <rect x="80" y="100" width="240" height="380" rx="8" fill="#5B21B6" opacity="0.5"/>
+    <rect x="80" y="100" width="240" height="380" rx="8" fill="none" stroke="#2E1065" stroke-width="4"/>
+    <!-- Tapestry heraldic pattern (simplified) -->
+    <g fill="#D97706" opacity="0.6">
+      <path d="M148,200 L148,170 L164,180 L200,155 L236,180 L252,170 L252,200 Z"/>
+      <circle cx="200" cy="260" r="30"/>
+      <path d="M180,290 L180,310 L185,320 L200,315 L215,320 L220,310 L220,290 Z" fill="#D97706"/>
+    </g>
+    <rect x="480" y="120" width="220" height="340" rx="8" fill="#C84B31" opacity="0.4"/>
+    <rect x="480" y="120" width="220" height="340" rx="8" fill="none" stroke="#7B2215" stroke-width="4"/>
+    <g fill="#FCD34D" opacity="0.5">
+      <circle cx="590" cy="220" r="25"/>
+      <path d="M570,245 L590,260 L610,245 L610,270 L590,285 L570,270 Z"/>
+    </g>
+  </g>
+
+  <!-- Background café bokeh circles (simulated out-of-focus lights) -->
+  <g filter="url(#soft-glow-g)" opacity="0.6">
+    <circle cx="100" cy="600" r="40" fill="#FCD34D" opacity="0.5"/>
+    <circle cx="200" cy="700" r="30" fill="#D97706" opacity="0.4"/>
+    <circle cx="650" cy="580" r="50" fill="#FCD34D" opacity="0.4"/>
+    <circle cx="720" cy="680" r="35" fill="#C84B31" opacity="0.35"/>
+    <circle cx="60" cy="450" r="28" fill="#FFF4D6" opacity="0.45"/>
+    <circle cx="740" cy="440" r="32" fill="#FFF4D6" opacity="0.4"/>
+  </g>
+
+  <!-- Table surface (lower portion) -->
+  <rect x="0" y="600" width="800" height="200" rx="0" fill="#A07038"/>
+  <rect x="0" y="596" width="800" height="24" rx="8" fill="#C89050"/>
+  <rect x="0" y="596" width="800" height="6" rx="3" fill="#E8C080" opacity="0.5"/>
+  <!-- Table grain -->
+  <g stroke="#8B5A20" stroke-width="1" opacity="0.2" fill="none">
+    <path d="M0,640 Q200,620 400,640 Q600,660 800,640"/>
+    <path d="M0,680 Q200,660 400,680 Q600,700 800,680"/>
+    <path d="M0,720 Q200,700 400,720 Q600,740 800,720"/>
+  </g>
+
+  <!-- Warm center glow (light falling on subject) -->
+  <ellipse cx="400" cy="500" rx="300" ry="250" fill="url(#glowCenter)"/>
+
+  <!-- HUMAN HAND (top right, reaching in with pastry) -->
+  <g transform="translate(530,180)">
+    <!-- Forearm -->
+    <path d="M0,0 Q30,20 80,80 Q100,120 90,180" stroke="#E8C8A0" stroke-width="50" fill="none" stroke-linecap="round"/>
+    <!-- Sleeve (white café apron) -->
+    <path d="M-20,-10 Q10,10 60,70 Q80,110 70,170" stroke="white" stroke-width="58" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M-20,-10 Q10,10 60,70 Q80,110 70,170" stroke="#E8DCC8" stroke-width="56" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <!-- Palm / hand -->
+    <path d="M50,140 Q80,120 100,130 Q114,150 104,172 Q84,192 60,184 Q40,176 50,140 Z" fill="#E8C8A0"/>
+    <!-- Fingers holding pastry -->
+    <path d="M92,136 Q108,126 116,136 Q118,150 108,158" stroke="#E8C8A0" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M72,128 Q86,116 96,128 Q100,142 90,152" stroke="#E8C8A0" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M50,132 Q62,120 72,132 Q76,146 66,156" stroke="#E8C8A0" stroke-width="14" fill="none" stroke-linecap="round"/>
+
+    <!-- PASTRY (being offered) -->
+    <g transform="translate(46,96)">
+      <!-- Pastry base -->
+      <ellipse cx="35" cy="38" rx="40" ry="28" fill="url(#pastryGrad)" filter="url(#grain-gallery)"/>
+      <!-- Pastry layers -->
+      <ellipse cx="35" cy="30" rx="36" ry="22" fill="#E8C888"/>
+      <ellipse cx="35" cy="24" rx="28" ry="16" fill="#F0D8A0"/>
+      <!-- Glaze drizzle -->
+      <path d="M15,20 Q22,28 18,38" stroke="#D97706" stroke-width="3" fill="none"/>
+      <path d="M35,14 Q42,24 38,35" stroke="#D97706" stroke-width="3" fill="none"/>
+      <path d="M55,20 Q60,30 54,40" stroke="#D97706" stroke-width="3" fill="none"/>
+      <!-- Cherry on top -->
+      <circle cx="35" cy="14" r="10" fill="#C84B31"/>
+      <circle cx="30" cy="11" r="4" fill="#E87060" opacity="0.6"/>
+      <path d="M35,4 Q38,-4 44,-8" stroke="#166534" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- KNIGHT DOG (main subject, center-left) -->
+  <g class="breathe" transform="translate(130,260)" filter="url(#grain-gallery)">
+    <!-- Tabard/surcoat (main garment) -->
+    <!-- Back of tabard -->
+    <path d="M60,200 Q120,170 180,200 L190,380 Q120,410 50,380 Z" fill="#C84B31"/>
+
+    <!-- Body -->
+    <ellipse cx="120" cy="310" rx="90" ry="130" fill="url(#knightDogCoat)"/>
+
+    <!-- Front tabard -->
+    <path d="M50,195 Q120,165 190,195 L195,370 Q120,400 45,370 Z" fill="#C84B31" opacity="0.9"/>
+    <!-- Tabard heraldic cross -->
+    <g fill="#FCD34D" opacity="0.8">
+      <rect x="102" y="220" width="36" height="120" rx="4"/>
+      <rect x="72" y="280" width="96" height="36" rx="4"/>
+    </g>
+    <!-- Paw print on tabard -->
+    <circle cx="120" cy="350" r="18" fill="#FDF6E8" opacity="0.5"/>
+    <circle cx="104" cy="336" r="9" fill="#FDF6E8" opacity="0.5"/>
+    <circle cx="120" cy="330" r="9" fill="#FDF6E8" opacity="0.5"/>
+    <circle cx="136" cy="336" r="9" fill="#FDF6E8" opacity="0.5"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="150" r="100" fill="url(#knightDogCoat)"/>
+
+    <!-- Fur highlights -->
+    <ellipse cx="104" cy="120" rx="70" ry="80" fill="#F5C870" opacity="0.2"/>
+
+    <!-- Snout -->
+    <ellipse cx="120" cy="178" rx="52" ry="36" fill="#E8B060"/>
+    <!-- Nose -->
+    <ellipse cx="120" cy="164" rx="22" ry="15" fill="#2C1810"/>
+    <circle cx="113" cy="161" r="6" fill="#3A2810" opacity="0.5"/>
+
+    <!-- BIG expressive Pixar eyes — happy, reaching up -->
+    <circle cx="86" cy="128" r="22" fill="#2C1810"/>
+    <circle cx="154" cy="128" r="22" fill="#2C1810"/>
+    <!-- Iris warmth -->
+    <circle cx="86" cy="128" r="16" fill="#5A3010"/>
+    <circle cx="154" cy="128" r="16" fill="#5A3010"/>
+    <!-- Highlights -->
+    <circle cx="79" cy="120" r="9" fill="white"/>
+    <circle cx="147" cy="120" r="9" fill="white"/>
+    <circle cx="76" cy="117" r="4" fill="white" opacity="0.7"/>
+    <circle cx="144" cy="117" r="4" fill="white" opacity="0.7"/>
+
+    <!-- Eyebrows raised (joyful, looking up at pastry) -->
+    <path d="M68,104 Q86,92 104,100" fill="none" stroke="#8B5A10" stroke-width="6" stroke-linecap="round"/>
+    <path d="M136,100 Q154,92 172,104" fill="none" stroke="#8B5A10" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Big smile / excited face -->
+    <path d="M84,188 Q120,210 156,188" fill="none" stroke="#2C1810" stroke-width="5" stroke-linecap="round"/>
+    <!-- Mouth open excited -->
+    <path d="M94,194 Q120,218 146,194" fill="#E85878"/>
+    <path d="M100,202 Q120,216 140,202" fill="#FDF6E8"/>
+    <!-- Tongue hanging out in excitement -->
+    <path d="M104,208 Q120,232 136,208" fill="#E85878"/>
+
+    <!-- Floppy golden ears -->
+    <path d="M28,110 Q5,85 10,150 Q32,128 55,112 Z" fill="#C07830"/>
+    <path d="M212,110 Q235,85 230,150 Q208,128 185,112 Z" fill="#C07830"/>
+
+    <!-- Paws reaching up toward pastry -->
+    <path d="M58,280 Q20,240 30,180" stroke="url(#knightDogCoat)" stroke-width="40" fill="none" stroke-linecap="round"/>
+    <ellipse cx="34" cy="172" rx="26" ry="20" fill="#D4883A"/>
+    <!-- Toe details on paw -->
+    <path d="M20,168 Q34,160 48,168" stroke="#C07828" stroke-width="3" fill="none" opacity="0.5"/>
+
+    <!-- Knight's pauldron (shoulder armor) -->
+    <path d="M28,190 Q10,160 30,130 Q50,140 60,180 Z" fill="#9BA8A0"/>
+    <path d="M28,190 Q10,160 30,130 Q50,140 60,180 Z" fill="none" stroke="#7A8880" stroke-width="2"/>
+    <path d="M212,190 Q230,160 210,130 Q190,140 180,180 Z" fill="#9BA8A0"/>
+    <path d="M212,190 Q230,160 210,130 Q190,140 180,180 Z" fill="none" stroke="#7A8880" stroke-width="2"/>
+
+    <!-- Simple crown/circlet on head -->
+    <path d="M70,54 L70,42 L84,52 L100,36 L120,50 L140,36 L156,52 L170,42 L170,54 Z" fill="#D97706"/>
+    <circle cx="100" cy="40" r="5" fill="#C84B31"/>
+    <circle cx="120" cy="34" r="6" fill="#C84B31"/>
+    <circle cx="140" cy="40" r="5" fill="#C84B31"/>
+
+    <!-- Belt buckle on tabard -->
+    <rect x="100" y="378" width="40" height="14" rx="3" fill="#D97706"/>
+    <rect x="108" y="380" width="24" height="10" rx="2" fill="#FCD34D" opacity="0.7"/>
+  </g>
+
+  <!-- Warm amber light overlay from above -->
+  <radialGradient id="lightPool" cx="65%" cy="30%" r="50%">
+    <stop offset="0%" stop-color="#FFF4D6" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </radialGradient>
+  <rect width="800" height="800" fill="url(#lightPool)"/>
+
+  <!-- Vignette -->
+  <radialGradient id="vig-gallery" cx="45%" cy="50%" r="65%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#2C1810" stop-opacity="0.45"/>
+  </radialGradient>
+  <rect width="800" height="800" fill="url(#vig-gallery)"/>
+</svg>

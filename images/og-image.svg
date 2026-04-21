@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Château Barkalot OG social share card: logo, tagline, and hero café scene">
+  <defs>
+    <radialGradient id="ogBg" cx="35%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#FDF6E8"/>
+      <stop offset="60%" stop-color="#F5EDD8"/>
+      <stop offset="100%" stop-color="#EDE0C4"/>
+    </radialGradient>
+    <radialGradient id="ogHeroArea" cx="70%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#C9B99A"/>
+      <stop offset="100%" stop-color="#8B6A3A"/>
+    </radialGradient>
+    <radialGradient id="windowOg" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#FFF4D6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="og-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#2C1810" flood-opacity="0.15"/>
+    </filter>
+    <filter id="og-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <!-- Right-side scene panel (60% width) -->
+  <rect x="440" y="0" width="760" height="630" fill="url(#ogHeroArea)"/>
+  <!-- Stone wall pattern -->
+  <g fill="none" stroke="#B0A080" stroke-width="1" opacity="0.3">
+    <rect x="440" y="0" width="100" height="65"/><rect x="540" y="0" width="120" height="65"/>
+    <rect x="660" y="0" width="100" height="65"/><rect x="760" y="0" width="130" height="65"/>
+    <rect x="890" y="0" width="110" height="65"/><rect x="1000" y="0" width="120" height="65"/>
+    <rect x="1120" y="0" width="80" height="65"/>
+    <rect x="490" y="65" width="120" height="65"/><rect x="610" y="65" width="100" height="65"/>
+    <rect x="710" y="65" width="130" height="65"/><rect x="840" y="65" width="110" height="65"/>
+    <rect x="950" y="65" width="120" height="65"/><rect x="1070" y="65" width="130" height="65"/>
+  </g>
+
+  <!-- Arched window in scene -->
+  <path d="M650,0 L650,280 Q650,360 760,360 Q870,360 870,280 L870,0 Z" fill="#87CEEB" opacity="0.5"/>
+  <path d="M650,0 L650,280 Q650,360 760,360 Q870,360 870,280 L870,0 Z" fill="url(#windowOg)"/>
+  <path d="M650,0 L650,280 Q650,360 760,360 Q870,360 870,280 L870,0 Z" fill="none" stroke="#8B7355" stroke-width="10"/>
+  <line x1="760" y1="0" x2="760" y2="360" stroke="#8B7355" stroke-width="5"/>
+  <line x1="650" y1="180" x2="870" y2="180" stroke="#8B7355" stroke-width="5"/>
+
+  <!-- Banner in scene -->
+  <path d="M920,0 L980,0 L980,220 L950,188 L920,220 Z" fill="#C84B31" opacity="0.85"/>
+  <circle cx="950" cy="80" r="16" fill="#FDF6E8" opacity="0.8"/>
+  <circle cx="936" cy="64" r="8" fill="#FDF6E8" opacity="0.8"/>
+  <circle cx="950" cy="58" r="8" fill="#FDF6E8" opacity="0.8"/>
+  <circle cx="964" cy="64" r="8" fill="#FDF6E8" opacity="0.8"/>
+
+  <!-- Round Table in scene -->
+  <ellipse cx="760" cy="500" rx="240" ry="80" fill="#C8965A" opacity="0.8"/>
+  <ellipse cx="760" cy="500" rx="240" ry="80" fill="none" stroke="#8B5A20" stroke-width="3"/>
+
+  <!-- Dog silhouette at table (simplified) -->
+  <g filter="url(#og-grain)" transform="translate(650,360)">
+    <ellipse cx="60" cy="120" rx="50" ry="70" fill="#D4883A"/>
+    <circle cx="60" cy="58" r="50" fill="#D4883A"/>
+    <ellipse cx="60" cy="72" rx="30" ry="22" fill="#E8AA60"/>
+    <circle cx="60" cy="62" rx="12" rx="12" r="12" fill="#2C1810"/>
+    <circle cx="40" cy="44" r="12" fill="#2C1810"/>
+    <circle cx="80" cy="44" r="12" fill="#2C1810"/>
+    <circle cx="36" cy="41" r="5" fill="white"/>
+    <circle cx="76" cy="41" r="5" fill="white"/>
+    <path d="M15,40 Q0,20 6,4 Q30,20 38,44 Z" fill="#C07830"/>
+    <path d="M105,40 Q120,20 114,4 Q90,20 82,44 Z" fill="#C07830"/>
+    <path d="M26,148 Q60,128 94,148 L100,190 Q60,210 20,190 Z" fill="#C84B31" opacity="0.85"/>
+  </g>
+
+  <!-- Tankard on table -->
+  <g transform="translate(840,420)">
+    <path d="M6,18 Q4,0 10,0 L64,0 Q70,0 68,18 L62,108 Q62,114 36,114 Q10,114 10,108 Z" fill="#9BA8A0"/>
+    <path d="M6,18 Q4,0 10,0 L64,0 Q70,0 68,18 L62,108" fill="none" stroke="#7A8880" stroke-width="2"/>
+    <path d="M68,22 Q86,30 86,54 Q86,78 68,86" fill="none" stroke="#9BA8A0" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="36" cy="10" rx="28" ry="10" fill="white" opacity="0.8"/>
+  </g>
+
+  <!-- Floor in scene -->
+  <rect x="440" y="540" width="760" height="90" fill="#8B5A2B" opacity="0.7"/>
+
+  <!-- Warm overlay on scene -->
+  <rect x="440" y="0" width="760" height="630" fill="#D97706" opacity="0.08"/>
+
+  <!-- Dividing edge / fade -->
+  <linearGradient id="divFade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#F5EDD8"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </linearGradient>
+  <rect x="380" y="0" width="100" height="630" fill="url(#divFade)"/>
+
+  <!-- ===== LEFT PANEL: Logo + Copy ===== -->
+
+  <!-- Safe area padding: 64px -->
+  <!-- Logo -->
+  <g transform="translate(64,60)" filter="url(#og-shadow)">
+    <!-- Shield -->
+    <path d="M6,5 Q6,2 9,2 L59,2 Q62,2 62,5 L62,44 Q62,62 34,72 Q6,62 6,44 Z" fill="#C84B31"/>
+    <path d="M6,5 Q6,2 9,2 L59,2 Q62,2 62,5 L62,44 Q62,62 34,72 Q6,62 6,44 Z" fill="none" stroke="#7B2215" stroke-width="2"/>
+    <!-- Paw palm -->
+    <circle cx="34" cy="42" r="16" fill="#FDF6E8"/>
+    <!-- Cup detail -->
+    <ellipse cx="34" cy="38" rx="10" ry="4" fill="#6B4226"/>
+    <path d="M44,38 Q52,40 52,46 Q52,52 44,50" fill="none" stroke="#FDF6E8" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Toe beans -->
+    <circle cx="18" cy="28" r="7" fill="#FDF6E8"/>
+    <circle cx="27" cy="22" r="7" fill="#FDF6E8"/>
+    <circle cx="41" cy="22" r="7" fill="#FDF6E8"/>
+    <circle cx="50" cy="28" r="7" fill="#FDF6E8"/>
+    <!-- Crown -->
+    <path d="M22,15 L22,8 L28,13 L34,6 L40,13 L46,8 L46,15 Z" fill="#D97706"/>
+    <rect x="22" y="15" width="24" height="5" rx="2.5" fill="#D97706"/>
+    <circle cx="34" cy="8" r="3" fill="#C84B31"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="140" y="104" font-family="'Fredoka', Georgia, serif" font-size="30" font-weight="700" fill="#2C1810">Château</text>
+  <text x="140" y="138" font-family="'Fredoka', Georgia, serif" font-size="36" font-weight="700" fill="#C84B31">Barkalot</text>
+
+  <!-- Divider line -->
+  <line x1="64" y1="168" x2="360" y2="168" stroke="#DDD0B8" stroke-width="1.5"/>
+
+  <!-- Tagline centered -->
+  <text x="64" y="240" font-family="'Fredoka', Georgia, serif" font-size="32" font-weight="600" fill="#2C1810">Where every pup</text>
+  <text x="64" y="282" font-family="'Fredoka', Georgia, serif" font-size="32" font-weight="600" fill="#C84B31">is knighted.</text>
+
+  <!-- Value prop -->
+  <text x="64" y="340" font-family="'Nunito', sans-serif" font-size="16" fill="#6B4226" font-style="italic">A cozy Camelot for coffee, pastries,</text>
+  <text x="64" y="362" font-family="'Nunito', sans-serif" font-size="16" fill="#6B4226" font-style="italic">and the noblest pack of dogs in the realm.</text>
+
+  <!-- Key phrases -->
+  <g transform="translate(64,410)">
+    <rect x="0" y="0" width="160" height="32" rx="16" fill="#C84B31" opacity="0.12"/>
+    <text x="80" y="21" font-family="'Nunito', sans-serif" font-size="13" fill="#C84B31" font-weight="700" text-anchor="middle">The round table awaits</text>
+  </g>
+  <g transform="translate(64,454)">
+    <rect x="0" y="0" width="148" height="32" rx="16" fill="#5B21B6" opacity="0.12"/>
+    <text x="74" y="21" font-family="'Nunito', sans-serif" font-size="13" fill="#5B21B6" font-weight="700" text-anchor="middle">Every pup, a knight</text>
+  </g>
+  <g transform="translate(64,498)">
+    <rect x="0" y="0" width="156" height="32" rx="16" fill="#D97706" opacity="0.15"/>
+    <text x="78" y="21" font-family="'Nunito', sans-serif" font-size="13" fill="#D97706" font-weight="700" text-anchor="middle">Hark — coffee is served</text>
+  </g>
+
+  <!-- Website URL placeholder -->
+  <text x="64" y="584" font-family="'Nunito', sans-serif" font-size="14" fill="#9C6B48" letter-spacing="1">chateaubarkalot.com</text>
+
+  <!-- Overall warm overlay -->
+  <rect width="1200" height="630" fill="#D97706" opacity="0.03"/>
+</svg>

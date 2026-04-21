@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Six adorable Pixar-style rescue dogs in a row wearing colorful bandanas: beagle, corgi, shih tzu, lab mix, terrier, and hound mix with friendly expressions">
+  <defs>
+    <filter id="grain-adopt">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.5"/>
+    </filter>
+    <!-- Warm backdrop gradient -->
+    <radialGradient id="backdropAdopt" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFF4D6"/>
+      <stop offset="70%" stop-color="#F5EDD8"/>
+      <stop offset="100%" stop-color="#EDE0C4"/>
+    </radialGradient>
+    <!-- Individual dog coat gradients -->
+    <radialGradient id="beagleCoat" cx="38%" cy="22%" r="64%">
+      <stop offset="0%" stop-color="#F0D0A0"/>
+      <stop offset="55%" stop-color="#C89050"/>
+      <stop offset="100%" stop-color="#7B4A10"/>
+    </radialGradient>
+    <radialGradient id="corgiCoat2" cx="35%" cy="20%" r="62%">
+      <stop offset="0%" stop-color="#F5CC60"/>
+      <stop offset="55%" stop-color="#D4A030"/>
+      <stop offset="100%" stop-color="#8B6010"/>
+    </radialGradient>
+    <radialGradient id="shihtzuCoat" cx="40%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#F8F0E0"/>
+      <stop offset="60%" stop-color="#E0D0B8"/>
+      <stop offset="100%" stop-color="#B0A080"/>
+    </radialGradient>
+    <radialGradient id="labCoat" cx="38%" cy="22%" r="64%">
+      <stop offset="0%" stop-color="#D4B880"/>
+      <stop offset="55%" stop-color="#A07840"/>
+      <stop offset="100%" stop-color="#5C4010"/>
+    </radialGradient>
+    <radialGradient id="terrierCoat" cx="38%" cy="20%" r="62%">
+      <stop offset="0%" stop-color="#D8D0C0"/>
+      <stop offset="55%" stop-color="#B0A880"/>
+      <stop offset="100%" stop-color="#706850"/>
+    </radialGradient>
+    <radialGradient id="houndCoat" cx="38%" cy="22%" r="64%">
+      <stop offset="0%" stop-color="#E8C0A0"/>
+      <stop offset="55%" stop-color="#C08060"/>
+      <stop offset="100%" stop-color="#804020"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#backdropAdopt)"/>
+  <!-- Warm texture overlay -->
+  <rect width="600" height="800" fill="#F5EDD8" opacity="0.3"/>
+
+  <!-- Title banner area -->
+  <rect x="0" y="0" width="600" height="80" fill="#C84B31" opacity="0.12"/>
+
+  <!-- DOG ROW 1: Beagle (left) + Corgi (right) -->
+
+  <!-- BEAGLE -->
+  <g class="breathe" transform="translate(40,90)" filter="url(#grain-adopt)">
+    <!-- Body -->
+    <ellipse cx="90" cy="230" rx="72" ry="95" fill="url(#beagleCoat)"/>
+    <!-- Back patch (beagle black saddle) -->
+    <ellipse cx="90" cy="200" rx="55" ry="65" fill="#3A2010" opacity="0.6"/>
+    <!-- Head -->
+    <circle cx="90" cy="118" r="72" fill="url(#beagleCoat)"/>
+    <!-- White blaze on face -->
+    <ellipse cx="90" cy="140" rx="35" ry="45" fill="#F8F0E0" opacity="0.6"/>
+    <!-- Snout -->
+    <ellipse cx="90" cy="148" rx="38" ry="26" fill="#E0C080"/>
+    <!-- Nose -->
+    <ellipse cx="90" cy="138" rx="16" ry="11" fill="#2C1810"/>
+    <circle cx="84" cy="135" r="4" fill="#3A2810" opacity="0.5"/>
+    <!-- Eyes — large Pixar warm brown -->
+    <circle cx="64" cy="105" r="16" fill="#2C1810"/>
+    <circle cx="116" cy="105" r="16" fill="#2C1810"/>
+    <circle cx="59" cy="100" r="6.5" fill="white"/>
+    <circle cx="111" cy="100" r="6.5" fill="white"/>
+    <circle cx="57" cy="98" r="2.5" fill="white" opacity="0.7"/>
+    <circle cx="109" cy="98" r="2.5" fill="white" opacity="0.7"/>
+    <!-- Eyebrows -->
+    <path d="M50,88 Q64,80 78,88" fill="none" stroke="#7B4A10" stroke-width="4" stroke-linecap="round"/>
+    <path d="M102,88 Q116,80 130,88" fill="none" stroke="#7B4A10" stroke-width="4" stroke-linecap="round"/>
+    <!-- Smile -->
+    <path d="M66,155 Q90,172 114,155" fill="none" stroke="#2C1810" stroke-width="4" stroke-linecap="round"/>
+    <!-- Tongue -->
+    <path d="M76,166 Q90,180 104,166" fill="#E8607A"/>
+    <!-- Floppy ears -->
+    <path d="M24,88 Q5,75 8,130 Q30,115 48,90 Z" fill="#A07040"/>
+    <path d="M156,88 Q175,75 172,130 Q150,115 132,90 Z" fill="#A07040"/>
+    <!-- Beagle tip: white tail tip detail & collar -->
+    <rect x="55" y="290" width="70" height="16" rx="8" fill="#D97706"/>
+    <!-- Bandana — CORAL RED -->
+    <path d="M52,185 Q90,168 128,185 L118,225 Q90,240 62,225 Z" fill="#C84B31" opacity="0.9"/>
+    <path d="M52,185 Q90,168 128,185" fill="none" stroke="#7B2215" stroke-width="1.5"/>
+    <circle cx="90" cy="225" r="6" fill="#7B2215" opacity="0.7"/>
+    <!-- Chest white fur -->
+    <ellipse cx="90" cy="270" rx="45" ry="30" fill="#F8F0E0" opacity="0.5"/>
+    <!-- Paws -->
+    <ellipse cx="56" cy="340" rx="24" ry="16" fill="#E0C080"/>
+    <ellipse cx="124" cy="340" rx="24" ry="16" fill="#E0C080"/>
+    <ellipse cx="68" cy="350" rx="18" ry="12" fill="#E8C890" opacity="0.5"/>
+    <ellipse cx="112" cy="350" rx="18" ry="12" fill="#E8C890" opacity="0.5"/>
+  </g>
+
+  <!-- CORGI (right) -->
+  <g class="breathe" transform="translate(320,90)" filter="url(#grain-adopt)" style="animation-delay:0.5s">
+    <ellipse cx="90" cy="230" rx="70" ry="90" fill="url(#corgiCoat2)"/>
+    <circle cx="90" cy="118" r="72" fill="url(#corgiCoat2)"/>
+    <!-- White chest/face -->
+    <ellipse cx="90" cy="145" rx="38" ry="50" fill="#F8F0D0" opacity="0.6"/>
+    <ellipse cx="90" cy="148" rx="34" ry="24" fill="#F5E8B0"/>
+    <ellipse cx="90" cy="138" rx="15" ry="10" fill="#2C1810"/>
+    <circle cx="82" cy="135" r="4" fill="#3A2810" opacity="0.5"/>
+    <circle cx="62" cy="104" r="17" fill="#2C1810"/>
+    <circle cx="118" cy="104" r="17" fill="#2C1810"/>
+    <circle cx="57" cy="99" r="7" fill="white"/>
+    <circle cx="113" cy="99" r="7" fill="white"/>
+    <circle cx="55" cy="97" r="3" fill="white" opacity="0.7"/>
+    <circle cx="111" cy="97" r="3" fill="white" opacity="0.7"/>
+    <path d="M50,86 Q64,78 78,86" fill="none" stroke="#8B6010" stroke-width="4" stroke-linecap="round"/>
+    <path d="M102,86 Q116,78 130,86" fill="none" stroke="#8B6010" stroke-width="4" stroke-linecap="round"/>
+    <path d="M66,154 Q90,170 114,154" fill="none" stroke="#2C1810" stroke-width="4" stroke-linecap="round"/>
+    <path d="M76,164 Q90,178 104,164" fill="#E8607A"/>
+    <!-- Corgi big triangular ears -->
+    <path d="M28,80 Q6,44 18,14 Q44,40 52,82 Z" fill="#E8B040"/>
+    <path d="M152,80 Q174,44 162,14 Q136,40 128,82 Z" fill="#E8B040"/>
+    <!-- Bandana — ROYAL PURPLE -->
+    <path d="M54,185 Q90,168 126,185 L116,222 Q90,238 64,222 Z" fill="#5B21B6" opacity="0.9"/>
+    <path d="M54,185 Q90,168 126,185" fill="none" stroke="#2E1065" stroke-width="1.5"/>
+    <circle cx="90" cy="222" r="6" fill="#2E1065" opacity="0.7"/>
+    <ellipse cx="90" cy="270" rx="42" ry="28" fill="#F8F0D0" opacity="0.5"/>
+    <ellipse cx="56" cy="342" rx="22" ry="15" fill="#E0C070"/>
+    <ellipse cx="124" cy="342" rx="22" ry="15" fill="#E0C070"/>
+  </g>
+
+  <!-- DOG ROW 2: Shih Tzu (left) + Lab Mix (right) -->
+
+  <!-- SHIH TZU -->
+  <g class="breathe" transform="translate(30,440)" filter="url(#grain-adopt)" style="animation-delay:1s">
+    <ellipse cx="80" cy="200" rx="68" ry="85" fill="url(#shihtzuCoat)"/>
+    <!-- Fluffy body texture -->
+    <ellipse cx="80" cy="180" rx="58" ry="72" fill="white" opacity="0.3"/>
+    <!-- Head with lots of fluffy fur -->
+    <circle cx="80" cy="105" r="72" fill="url(#shihtzuCoat)"/>
+    <circle cx="80" cy="95" r="80" fill="white" opacity="0.25"/>
+    <!-- Flat face / pushed-in snout -->
+    <circle cx="80" cy="116" r="34" fill="#E8D8C0"/>
+    <ellipse cx="80" cy="122" rx="22" ry="15" fill="#D8C8B0"/>
+    <ellipse cx="80" cy="116" rx="13" ry="9" fill="#2C1810"/>
+    <circle cx="74" cy="113" r="3.5" fill="#3A2810" opacity="0.5"/>
+    <circle cx="56" cy="100" r="15" fill="#2C1810"/>
+    <circle cx="104" cy="100" r="15" fill="#2C1810"/>
+    <circle cx="52" cy="96" r="6" fill="white"/>
+    <circle cx="100" cy="96" r="6" fill="white"/>
+    <path d="M60,126 Q80,138 100,126" fill="none" stroke="#2C1810" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Ribbon/bow in hair (classic shih tzu) -->
+    <path d="M56,50 Q80,36 104,50 Q96,64 80,60 Q64,64 56,50 Z" fill="#C84B31"/>
+    <circle cx="80" cy="55" r="6" fill="#7B2215"/>
+    <!-- Topknot -->
+    <ellipse cx="80" cy="40" rx="30" ry="22" fill="white" opacity="0.8"/>
+    <ellipse cx="80" cy="38" rx="22" ry="16" fill="#F0E8D8"/>
+    <!-- Floppy silky ears -->
+    <path d="M14,90 Q-5,80 0,140 Q20,120 36,90 Z" fill="#D8D0B8"/>
+    <path d="M146,90 Q165,80 160,140 Q140,120 124,90 Z" fill="#D8D0B8"/>
+    <!-- Bandana — FOREST GREEN -->
+    <path d="M44,168 Q80,152 116,168 L106,202 Q80,218 54,202 Z" fill="#166534" opacity="0.9"/>
+    <path d="M44,168 Q80,152 116,168" fill="none" stroke="#0D4020" stroke-width="1.5"/>
+    <circle cx="80" cy="202" r="6" fill="#0D4020" opacity="0.7"/>
+    <ellipse cx="46" cy="304" rx="20" ry="14" fill="#E0D8C8"/>
+    <ellipse cx="114" cy="304" rx="20" ry="14" fill="#E0D8C8"/>
+  </g>
+
+  <!-- LAB MIX -->
+  <g class="breathe" transform="translate(320,440)" filter="url(#grain-adopt)" style="animation-delay:1.5s">
+    <ellipse cx="90" cy="210" rx="75" ry="95" fill="url(#labCoat)"/>
+    <circle cx="90" cy="115" r="74" fill="url(#labCoat)"/>
+    <!-- Lighter snout area -->
+    <ellipse cx="90" cy="140" rx="38" ry="28" fill="#C8A060"/>
+    <ellipse cx="90" cy="130" rx="18" ry="13" fill="#2C1810"/>
+    <circle cx="83" cy="127" r="5" fill="#3A2810" opacity="0.5"/>
+    <circle cx="64" cy="102" r="17" fill="#2C1810"/>
+    <circle cx="116" cy="102" r="17" fill="#2C1810"/>
+    <circle cx="59" cy="97" r="7" fill="white"/>
+    <circle cx="111" cy="97" r="7" fill="white"/>
+    <circle cx="57" cy="95" r="3" fill="white" opacity="0.7"/>
+    <circle cx="109" cy="95" r="3" fill="white" opacity="0.7"/>
+    <path d="M52,88 Q66,80 80,88" fill="none" stroke="#7B5820" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100,88 Q114,80 128,88" fill="none" stroke="#7B5820" stroke-width="4" stroke-linecap="round"/>
+    <path d="M66,146 Q90,162 114,146" fill="none" stroke="#2C1810" stroke-width="4" stroke-linecap="round"/>
+    <path d="M76,157 Q90,170 104,157" fill="#E8607A"/>
+    <!-- Floppy lab ears -->
+    <path d="M24,88 Q6,76 10,128 Q30,112 46,88 Z" fill="#907038"/>
+    <path d="M156,88 Q174,76 170,128 Q150,112 134,88 Z" fill="#907038"/>
+    <!-- Bandana — GOLDEN HONEY -->
+    <path d="M52,180 Q90,162 128,180 L118,218 Q90,234 62,218 Z" fill="#D97706" opacity="0.9"/>
+    <path d="M52,180 Q90,162 128,180" fill="none" stroke="#9B5A00" stroke-width="1.5"/>
+    <circle cx="90" cy="218" r="6" fill="#9B5A00" opacity="0.7"/>
+    <ellipse cx="90" cy="260" rx="45" ry="30" fill="#C8A060" opacity="0.3"/>
+    <ellipse cx="58" cy="330" rx="22" ry="15" fill="#B89050"/>
+    <ellipse cx="122" cy="330" rx="22" ry="15" fill="#B89050"/>
+  </g>
+
+  <!-- TERRIER + HOUND (bottom row) -->
+
+  <!-- TERRIER -->
+  <g class="breathe" transform="translate(40,680)" filter="url(#grain-adopt)" style="animation-delay:2s">
+    <!-- Compact terrier body -->
+    <ellipse cx="80" cy="160" rx="65" ry="80" fill="url(#terrierCoat)"/>
+    <circle cx="80" cy="84" r="65" fill="url(#terrierCoat)"/>
+    <!-- Wiry fur texture -->
+    <ellipse cx="80" cy="72" rx="62" ry="60" fill="white" opacity="0.15"/>
+    <ellipse cx="80" cy="106" rx="34" ry="24" fill="#C8C0A0"/>
+    <ellipse cx="80" cy="98" rx="14" ry="10" fill="#2C1810"/>
+    <circle cx="80" cy="95" r="3" fill="#3A2810" opacity="0.5"/>
+    <circle cx="58" cy="70" r="14" fill="#2C1810"/>
+    <circle cx="102" cy="70" r="14" fill="#2C1810"/>
+    <circle cx="54" cy="66" r="5.5" fill="white"/>
+    <circle cx="98" cy="66" r="5.5" fill="white"/>
+    <path d="M60,110 Q80,124 100,110" fill="none" stroke="#2C1810" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Terrier ears (folded forward) -->
+    <path d="M22,60 Q14,30 26,16 Q44,32 48,62 Z" fill="#C0B890"/>
+    <path d="M138,60 Q146,30 134,16 Q116,32 112,62 Z" fill="#C0B890"/>
+    <!-- Bandana — CORAL LIGHT -->
+    <path d="M42,148 Q80,132 118,148 L108,180 Q80,196 52,180 Z" fill="#F2A896" opacity="0.9"/>
+    <path d="M42,148 Q80,132 118,148" fill="none" stroke="#C84B31" stroke-width="1.5"/>
+    <circle cx="80" cy="180" r="6" fill="#C84B31" opacity="0.7"/>
+    <ellipse cx="50" cy="256" rx="20" ry="13" fill="#C8C0A0"/>
+    <ellipse cx="110" cy="256" rx="20" ry="13" fill="#C8C0A0"/>
+  </g>
+
+  <!-- HOUND MIX -->
+  <g class="breathe" transform="translate(320,680)" filter="url(#grain-adopt)" style="animation-delay:2.5s">
+    <ellipse cx="90" cy="175" rx="72" ry="88" fill="url(#houndCoat)"/>
+    <circle cx="90" cy="96" r="72" fill="url(#houndCoat)"/>
+    <!-- Tan face marking -->
+    <ellipse cx="90" cy="116" rx="42" ry="55" fill="#E8C0A0" opacity="0.5"/>
+    <ellipse cx="90" cy="124" rx="35" ry="24" fill="#D4A880"/>
+    <ellipse cx="90" cy="115" rx="16" ry="11" fill="#2C1810"/>
+    <circle cx="82" cy="112" r="4" fill="#3A2810" opacity="0.5"/>
+    <circle cx="62" cy="82" r="16" fill="#2C1810"/>
+    <circle cx="118" cy="82" r="16" fill="#2C1810"/>
+    <circle cx="57" cy="77" r="6.5" fill="white"/>
+    <circle cx="113" cy="77" r="6.5" fill="white"/>
+    <circle cx="55" cy="75" r="2.5" fill="white" opacity="0.7"/>
+    <circle cx="111" cy="75" r="2.5" fill="white" opacity="0.7"/>
+    <path d="M52,78 Q66,70 80,78" fill="none" stroke="#804020" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100,78 Q114,70 128,78" fill="none" stroke="#804020" stroke-width="4" stroke-linecap="round"/>
+    <path d="M66,130 Q90,146 114,130" fill="none" stroke="#2C1810" stroke-width="4" stroke-linecap="round"/>
+    <path d="M76,140 Q90,154 104,140" fill="#E8607A"/>
+    <!-- Long hound ears -->
+    <path d="M22,78 Q2,65 6,130 Q28,112 44,80 Z" fill="#A07050"/>
+    <path d="M158,78 Q178,65 174,130 Q152,112 136,80 Z" fill="#A07050"/>
+    <!-- Bandana — LIGHT PURPLE -->
+    <path d="M50,162 Q90,146 130,162 L120,196 Q90,212 60,196 Z" fill="#A78BFA" opacity="0.9"/>
+    <path d="M50,162 Q90,146 130,162" fill="none" stroke="#5B21B6" stroke-width="1.5"/>
+    <circle cx="90" cy="196" r="6" fill="#5B21B6" opacity="0.7"/>
+    <ellipse cx="90" cy="238" rx="44" ry="28" fill="#D4A880" opacity="0.3"/>
+    <ellipse cx="56" cy="284" rx="22" ry="14" fill="#C08060"/>
+    <ellipse cx="124" cy="284" rx="22" ry="14" fill="#C08060"/>
+  </g>
+
+  <!-- Warm overlay -->
+  <rect width="600" height="800" fill="#D97706" opacity="0.04"/>
+  <radialGradient id="vig-adopt" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#2C1810" stop-opacity="0.18"/>
+  </radialGradient>
+  <rect width="600" height="800" fill="url(#vig-adopt)"/>
+</svg>

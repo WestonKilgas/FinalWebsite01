@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" width="280" height="120" role="img" aria-label="Château Barkalot logo: crowned paw print shield with wordmark">
+  <defs>
+    <radialGradient id="shieldGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E06050"/>
+      <stop offset="100%" stop-color="#C84B31"/>
+    </radialGradient>
+    <radialGradient id="pawGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FDF6E8"/>
+      <stop offset="100%" stop-color="#F5EDD8"/>
+    </radialGradient>
+    <filter id="logo-shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#2C1810" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Shield shape -->
+  <g filter="url(#logo-shadow)">
+    <path d="M10,8 Q10,4 14,4 L96,4 Q100,4 100,8 L100,70 Q100,100 55,116 Q10,100 10,70 Z" fill="url(#shieldGrad)"/>
+    <!-- Shield border -->
+    <path d="M10,8 Q10,4 14,4 L96,4 Q100,4 100,8 L100,70 Q100,100 55,116 Q10,100 10,70 Z" fill="none" stroke="#7B2215" stroke-width="2.5"/>
+    <!-- Shield inner border -->
+    <path d="M17,12 Q17,8 20,8 L90,8 Q93,8 93,12 L93,70 Q93,96 55,110 Q17,96 17,70 Z" fill="none" stroke="#E87060" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Coffee cup integrated into paw (main paw palm) -->
+    <circle cx="55" cy="68" r="26" fill="url(#pawGrad)"/>
+    <!-- Coffee inside cup -->
+    <ellipse cx="55" cy="62" rx="17" ry="7" fill="#6B4226"/>
+    <!-- Latte art heart -->
+    <path d="M47,60 Q51,56 55,60 Q59,56 63,60 Q63,64 55,70 Q47,64 47,60 Z" fill="#D4883A" opacity="0.7"/>
+    <!-- Cup handle suggestion -->
+    <path d="M80,62 Q88,66 88,74 Q88,82 80,78" fill="none" stroke="#F5EDD8" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Paw toe beans (upper) -->
+    <circle cx="30" cy="46" r="11" fill="url(#pawGrad)"/>
+    <circle cx="45" cy="38" r="11" fill="url(#pawGrad)"/>
+    <circle cx="65" cy="38" r="11" fill="url(#pawGrad)"/>
+    <circle cx="80" cy="46" r="11" fill="url(#pawGrad)"/>
+
+    <!-- Crown on top of paw/shield -->
+    <g fill="#D97706">
+      <path d="M36,24 L36,14 L43,20 L55,10 L67,20 L74,14 L74,24 Z"/>
+      <!-- Crown base -->
+      <rect x="36" y="24" width="38" height="8" rx="3"/>
+      <!-- Crown gems -->
+      <circle cx="55" cy="14" r="4.5" fill="#C84B31"/>
+      <circle cx="43" cy="20" r="3" fill="#F2A896"/>
+      <circle cx="67" cy="20" r="3" fill="#F2A896"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="116" y="46" font-family="'Fredoka', Georgia, serif" font-size="22" font-weight="700" fill="#2C1810" letter-spacing="0.5">Château</text>
+  <text x="116" y="74" font-family="'Fredoka', Georgia, serif" font-size="26" font-weight="700" fill="#C84B31" letter-spacing="0.5">Barkalot</text>
+  <!-- Tagline -->
+  <text x="118" y="92" font-family="'Nunito', 'Helvetica Neue', sans-serif" font-size="10" font-weight="400" fill="#6B4226" letter-spacing="1" font-style="italic">Where every pup is knighted.</text>
+</svg>
