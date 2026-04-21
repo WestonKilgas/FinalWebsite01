@@ -1,9 +1,32 @@
 {
-  "project": "Schell Baroth Auto Center Website",
-  "status": "completed",
-  "required_files": [
-    "index.html",
-    "build-report.json"
+  "command": "/animated-website",
+  "site_name": "Schell Baroth Auto Center",
+  "output_file": "index.html",
+  "status": "completed_with_fallbacks",
+  "sections": [
+    "Top bar",
+    "Header",
+    "Hero",
+    "Trust section",
+    "Services",
+    "Pricing",
+    "Process",
+    "Gallery",
+    "Schedule",
+    "Reviews",
+    "CTA",
+    "Contact",
+    "Footer"
   ],
-  "notes": "Site completed and ready for GitHub submission."
+  "tools": {
+    "ui_ux_pro_max": "used",
+    "firecrawl": "fallback",
+    "stitch": "fallback",
+    "nano_banana_2": "fallback or skipped"
+  },
+  "notes": [
+    "Website completed and pushed to GitHub.",
+    "Pipeline was interrupted by rate limit before automatic sidecar completion.",
+    "Sidecar file added manually for submission completeness."
+  ]
 }
