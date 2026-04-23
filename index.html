@@ -6,6 +6,25 @@
   <title>Schell Baroth Auto Center | Auto Repair & Collision Repair in Erie, PA</title>
   <meta name="description" content="Schell Baroth Auto Center in Erie, PA provides collision repair, diagnostics, brakes, suspension, maintenance, and insurance claim help." />
   <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .float-in { animation: floatIn 4s ease-in-out infinite; }
+    @keyframes floatIn {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .pulse-glow { animation: pulseGlow 2.8s ease-in-out infinite; }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 rgba(214, 40, 40, 0.0); }
+      50% { box-shadow: 0 0 28px rgba(214, 40, 40, 0.22); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .reveal.visible { opacity: 1; transform: none; transition: none; }
+      .float-in, .pulse-glow { animation: none; }
+      * { transition: none !important; }
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
       --dark: #121212;
@@ -168,9 +187,9 @@
     </div>
   </header>
 
-  <section class="hero" id="home">
+  <section class="hero reveal" id="home">
     <div class="container hero-content">
-      <div class="hero-text">
+      <div class="hero-text float-in">
         <p class="eyebrow">Trusted Auto &amp; Body Shop in Erie, PA</p>
         <h2>Reliable Repairs. Clean Work. Fast Communication.</h2>
         <p>
@@ -187,7 +206,7 @@
           <div class="highlight-card"><strong>Mechanical + Body Shop</strong><span>One shop for accident repairs, diagnostics, and routine service.</span></div>
         </div>
       </div>
-      <div class="hero-form-card">
+      <div class="hero-form-card pulse-glow reveal">
         <h3>Quick Estimate Request</h3>
         <form id="appointmentForm">
           <input type="text" placeholder="Full Name" required />
@@ -201,7 +220,7 @@
     </div>
   </section>
 
-  <section class="trust section">
+  <section class="trust section reveal">
     <div class="container">
       <div class="section-heading center">
         <p class="section-tag">Why Drivers Choose Us</p>
@@ -217,7 +236,7 @@
     </div>
   </section>
 
-  <section class="services section" id="services">
+  <section class="services section reveal" id="services">
     <div class="container">
       <div class="section-heading">
         <p class="section-tag">Our Services</p>
@@ -234,7 +253,7 @@
     </div>
   </section>
 
-  <section class="pricing section" id="pricing">
+  <section class="pricing section reveal" id="pricing">
     <div class="container">
       <div class="section-heading center">
         <p class="section-tag">Pricing Menu</p>
@@ -277,7 +296,7 @@
     </div>
   </section>
 
-  <section class="process section">
+  <section class="process section reveal">
     <div class="container">
       <div class="section-heading center">
         <p class="section-tag">How It Works</p>
@@ -292,7 +311,7 @@
     </div>
   </section>
 
-  <section class="gallery section" id="gallery">
+  <section class="gallery section reveal" id="gallery">
     <div class="container">
       <div class="section-heading">
         <p class="section-tag">Repair Gallery</p>
@@ -310,7 +329,7 @@
     </div>
   </section>
 
-  <section class="schedule section" id="schedule">
+  <section class="schedule section reveal" id="schedule">
     <div class="container">
       <div class="section-heading center">
         <p class="section-tag">Schedule Service</p>
@@ -358,7 +377,7 @@
     </div>
   </section>
 
-  <section class="reviews section" id="reviews">
+  <section class="reviews section reveal" id="reviews">
     <div class="container">
       <div class="section-heading center">
         <p class="section-tag">Customer Reviews</p>
@@ -372,7 +391,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <div class="container">
       <div class="cta-box">
         <div>
@@ -388,7 +407,7 @@
     </div>
   </section>
 
-  <section class="section" id="contact">
+  <section class="section reveal" id="contact">
     <div class="container contact-grid">
       <div class="contact-info">
         <p class="section-tag">Contact Us</p>
@@ -443,6 +462,16 @@
 
     appointmentForm.addEventListener("submit", handleSubmit);
     appointmentForm2.addEventListener("submit", handleSubmit);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>
